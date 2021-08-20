@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+
+<body>
+    <script>
+        let numero = 1;
+        console.log(numero);
+
+        let notas = [6, 7, 8, 8, 5, 7, 7, 8, 9, 10];
+        let soma = notas.reduce(function (soma, i) {
+            return soma + i;
+        });
+        console.log(soma);
+
+        var media = soma / 10;
+        console.log(media);
+
+        function decidir() {
+            if (media >= 7) {
+                return alert("Parabéns vc foi aprovado sua nota final foi " + media);
+            } else if (media < 7) {
+                return alert("voce nao foi aprovado");
+            }
+        };
+        decidir();
+        console.log(decidir);
+
+        
+
+
+    </script>
+</body>
+
+</html>
