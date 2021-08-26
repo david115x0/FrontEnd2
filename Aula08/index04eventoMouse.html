@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" media="screen" type="text/css">
+    <title>Aula08 - Eventos Mouse</title>
+</head>
+
+<body onload="cumprimentarAutomatico()">
+    <div id="div1" onmouseover="mudarCor(this, '#f00')" , onmouseout="mudarCor(this, '#fff')"></div>
+    <div id="div1" onmouseover="mudarCor(this, 'green')" , onmouseout="mudarCor(this, 'yellow')"></div>
+    <div id="div1" onmouseover="mudarCor(this, 'purple')" , onmouseout="mudarCor(this, 'pink')"></div>
+
+    <button onclick="alert('olá!')" onmouseover="mudarPosicao(this)">Clique aqui</button>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
